@@ -58,10 +58,10 @@ class _MyHomePageState extends State<MyHomePage> {
               icon: const Icon(Icons.home),
               label: AppLocalizations.of(context)!.home),
           BottomNavigationBarItem(
-              icon: const Icon(Icons.home),
+              icon: const Icon(Icons.search),
               label: AppLocalizations.of(context)!.search),
           BottomNavigationBarItem(
-              icon: const Icon(Icons.home),
+              icon: const Icon(Icons.bookmark),
               label: AppLocalizations.of(context)!.bookmark),
         ],
       ),
