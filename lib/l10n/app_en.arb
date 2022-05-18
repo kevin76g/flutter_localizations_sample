@@ -1,0 +1,10 @@
+{
+    "applicationTitle": "Flutter Localization Demo",
+    "@applicationTitle": {"description": "This is English version title."},
+    "home": "Home",
+    "@home": {},
+    "search": "Search",
+    "@search": {},
+    "bookmark": "Bookmark",
+    "@bookmark": {}
+}
