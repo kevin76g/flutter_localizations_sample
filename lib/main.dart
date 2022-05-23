@@ -39,14 +39,18 @@ class _MyHomePageState extends State<MyHomePage> {
   Future<List<Widget>> sqliteDemo() async {
     List<Widget> listWidgets = [];
 
-    //言語設定の取得
+    //get a current language setting
     Locale locale = Localizations.localeOf(context);
     String languageCode = locale.languageCode;
     debugPrint(languageCode);
 
-    //データベース処理
+    //create a database
     await _sq.dbCreate();
+
+    //get data
     List<Map> list = await _sq.dataSelect(languageCode);
+
+    //make some text widgets
     for (var item in list) {
       Widget text = Text(
         item['name'].toString(),

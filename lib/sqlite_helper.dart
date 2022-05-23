@@ -64,6 +64,7 @@ class SQLiteHelper {
     await database.close();
   }
 
+  //get data from sqlite table
   Future<List<Map>> dataSelect(String locale) async {
     String sqlQuery;
 
